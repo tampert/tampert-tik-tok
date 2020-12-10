@@ -1,13 +1,28 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.App {
+  text-align: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container{
+  display: flex;
+  flex-direction: row;
+}
+
+.header {
+  background-color:yellow;
+}
+.followers-column{
+  background-color: red;
+  width: 500px;
+  height: 800px;
+}
+
+.feed{
+  background-color:white;
+  width: 500px;
+}
+
+.suggested-box{
+  background-color:blue;
+  width: 400px;
+  height: 400px;
 }
