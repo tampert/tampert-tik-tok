@@ -16,12 +16,11 @@ exports.handler = async function (event, context, callback){
         .collection(collection)
     
     try {
-        await posts.create("a post", {
-            title: "My first post",
-        })
+        const res = await posts.find()
 
         return {
-            statusCode: 200
+            statusCode: 200,
+            body: JSON.stringify(res)
         }
 
     } catch (e){
